@@ -1,0 +1,26 @@
+# === GLOBAL IGNORES ===
+
+# Node modules (both frontend & backend)
+**/node_modules/
+
+# Environment files
+**/.env
+
+# Log files
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# Mac system files
+.DS_Store
+
+# IDE/Editor folders
+.vscode/
+.idea/
+
+# Build output (if you use Vite/React)
+frontend/dist/
+frontend/build/
+
+# Optional: OS-specific
+Thumbs.db
