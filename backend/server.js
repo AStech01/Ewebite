@@ -22,7 +22,12 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+
+app.use(cors({
+  origin: ["ewebite-k9pn.vercel.app"], // replace with your Vercel URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json()); // Parses incoming JSON
 
 // Routes
