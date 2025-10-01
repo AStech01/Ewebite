@@ -24,7 +24,8 @@ const app = express();
 // Middleware
 
 app.use(cors({
-  origin: ["ewebite-k9pn.vercel.app"], // replace with your Vercel URL
+  origin:    [ "https://ewebite-k9pn.vercel.app", // Vercel frontend
+    "http://localhost:5173" ],// replace with your Vercel URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
